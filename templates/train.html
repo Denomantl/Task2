@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block content %}
+<form>
+    {% if 'инженер' == title or 'строитель' in title %}
+    <h2>Инженерные тренажёры</h2>
+    <img src="/static/img/Инженерная часть-min.png"
+         alt="здесь должна была быть картинка, но не нашлась">
+
+    {% else %}
+    <h2>Научные симуляторы</h2>
+    <img src="/static/img/Научная часть-min.png"
+         alt="здесь должна была быть картинка, но не нашлась">
+    {% endif %}
+</form>
+{% endblock %}

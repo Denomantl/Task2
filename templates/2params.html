@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+    <p>
+    <!--Задание поля для ввода параметра-->
+        {{ form.param1.label }}<br>
+        {{ form.param1(class="form-control") }}<br>
+        {% for error in form.param1.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+    <!--Задание поля для ввода параметра-->
+        {{ form.param2.label }}<br>
+        {{ form.param2(class="form-control") }}<br>
+        {% for error in form.param2.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <!--Создание кнопки вычисления-->
+    <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+    <h2><font color="#00a693">{{message}}</font></h2>
+</form>
+{% endblock %}

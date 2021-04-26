@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/o.css')}}" />
+</head>
+<body>
+<header>
+    <!--Задание ссылки на главную страницу-->
+    <h5><a href=/><font color="#00a693">Назад</font></a></h5>
+</header>
+<!-- Begin page content -->
+<main role="main" class="container">
+    <!--Задание строк с информацией-->
+    <h3><font color="#cd5700">Треугольник: </font></h3>
+    <img src="/static/img/TRIANGLE.png" alt="здесь должна была быть картинка, но не нашлась">
+    <h5><li><font color="#00a693">Площадь: через основание и высоту</font></li></h5>
+    <h5><li><font color="#00a693">Площадь: через две стороны и угол</font></li></h5>
+    <h5><li><font color="#00a693">Площадь: через радиус вписанной окружности</font></li></h5>
+    <h5><li><font color="#00a693">Площадь: через радиус описанной окружности</font></li></h5>
+    <h5><li><font color="#00a693">Площадь: формула Герона</font></li></h5>
+    <h3><font color="#cd5700">Четырёхугольник (параллелограм и трапеция):</font></h3>
+    <img src="/static/img/QUAD.png" alt="здесь должна была быть картинка, но не нашлась">
+    <h5><li><font color="#00a693">Площадь: через высоту и основание: AH * BC </font></li></h5>
+    <h5><li><font color="#00a693">Площадь: через две стороны и угол: AB * AD * sin A</font></li></h5>
+    <h5><li><font color="#00a693">Площадь: формула Брахмагупты (только для вписанных): √(p - AD)(p - AB)(p - BC)(p - CD), где p - полупериметр</font></li></h5>
+    <h3><font color="#cd5700">Круг:</font></h3>
+    <img src="/static/img/CIRCLE.png" alt="здесь должна была быть картинка, но не нашлась">
+    <h5><li><font color="#00a693">Площадь: сектор круга: pi * r^2 * a / 360</font></li></h5>
+</main>
+</body>
+</html>
